@@ -1,0 +1,41 @@
+@import "custom/vars";
+@import "custom/reset";
+
+
+body {
+  background: $gray-light;
+  color: $text-black;
+  font-family: $base-font; // bug: scrollbar shows
+}
+
+header, footer {
+  min-height: 20px;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex-grow: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.todo-list {
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  outline: 1px dashed gray;
+}

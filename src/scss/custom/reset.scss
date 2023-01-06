@@ -1,4 +1,5 @@
-@import '../node_modules/normalize.css/normalize.css';
+// add normalize.css
+@import '../../node_modules/normalize.css/normalize.css';
 
 // box-sizing reset
 * {
@@ -12,11 +13,8 @@ html, body {
   height: 100%;
 }
 
+// font-family reset
 body {
-  background: pink;
-  color: maroon;
-
-  // font-family reset
   font-family:
     /* Cross-platform generic font family (default user interface font) */
     system-ui,
@@ -46,34 +44,4 @@ body {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     "Noto Color Emoji";
-
-    font-family: 'Montserrat', sans-serif;
-}
-
-.app-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-main {
-  flex-grow: 1;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-h1 {
-  margin-top: 0;
-}
-
-.todo-list {
-  margin-bottom: 0;
-}
-
-.container {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-  outline: 1px dashed red;
 }
