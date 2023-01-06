@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel src/index.ejs --open --port 3000",
-    "build": "parcel build src/index.ejs"
+    "dev": "yarn start",
+    "build": "parcel build src/index.ejs",
+    "serve": "node src/js/server.js"
   },
   "keywords": [
     "js",
