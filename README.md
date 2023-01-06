@@ -2,7 +2,7 @@
 
 Тестовый учебный проект для курса Яндекс.Практикум «Мидл-фронтенд разработчик». 
 
-Текущий спринт: 1
+Текущий спринт: **1**
 
 - Автор: Евгений Леухин [[Email](mailto:EvgenyLeukhin@yandex.ru), [VK](https://vk.com/leukhin_ei), [Telegram](https://telegram.me/eleukhin)]
 - Netlify test stand: [link](https://timely-profiterole-8607d1.netlify.app)

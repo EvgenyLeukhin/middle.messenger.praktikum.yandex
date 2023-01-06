@@ -4,17 +4,17 @@
 body {
   background: $gray-light;
   color: $text-black;
-  font-family: $base-font; // bug: scrollbar shows
-}
-
-header, footer {
-  min-height: 20px;
+  font-family: $base-font;
 }
 
 .app-wrapper {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+header, footer {
+  min-height: 20px;
 }
 
 main {
