@@ -4,9 +4,9 @@
 
 Текущий спринт: 1
 
-- Автор: Евгений Леухин ([Email](mailto:EvgenyLeukhin@yandex.ru), [VK](https://vk.com/leukhin_ei), [Telegram](https://telegram.me/eleukhin))
-- Netlify test stand: [link](https://timely-profiterole-8607d1.netlify.app)
-- Figma design: [Дизайн от Практикума](https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1&t=mOAMJ9bwrIzfzlx3-0)
+- Автор: Евгений Леухин [[Email](mailto:EvgenyLeukhin@yandex.ru), [VK](https://vk.com/leukhin_ei), [Telegram](https://telegram.me/eleukhin)]
+- Netlify test stand: [[link]](https://timely-profiterole-8607d1.netlify.app)
+- Figma design: [[Дизайн от Практикума]](https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1&t=mOAMJ9bwrIzfzlx3-0)
 
 ## Скрипты
 
