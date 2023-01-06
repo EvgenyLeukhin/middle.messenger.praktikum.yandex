@@ -1,3 +1,18 @@
+# Web-messanger 
+
+- Автор: Евгений Леухин ([EvgenyLeukhin@yandex.ru](mailto:EvgenyLeukhin@yandex.ru))
+- Figma design: TODO*
+- Netlify test stand: [https://timely-profiterole-8607d1.netlify.app](https://timely-profiterole-8607d1.netlify.app)
+
+## Скрипты
+
+- ```yarn start``` - Запуск dev-сервера
+- ```yarn build``` - Сборка для production
+- ```yarn serve``` - Запуск локального сервера
+
+***
+***
+
 ### Ветка, в которой делаете задания спринта, должна называться sprint_i, где i - номер спринта. Не переименовывайте её
 
 ### Откройте pull request в ветку main из ветки, где вы разрабатывали проект, и добавьте ссылку на этот pr в README.md в ветке main. 
