@@ -1,6 +1,19 @@
 @import "custom/vars";
 @import "custom/reset";
 
+// components
+@import "../components/button/button";
+@import "../components/page-wrapper/page-wrapper";
+
+// pages
+@import "../pages/404/404";
+@import "../pages/500/500";
+@import "../pages/authorization/authorization";
+@import "../pages/chat/chat";
+@import "../pages/registration/registration";
+@import "../pages/user-settings/user-settings";
+
+// common styles
 body {
   background: $gray-light;
   color: $text-black;
