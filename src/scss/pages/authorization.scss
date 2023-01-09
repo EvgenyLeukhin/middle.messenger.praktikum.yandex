@@ -15,9 +15,7 @@
     width: 340px;
     min-height: 450px;
 
-    h2 {
-      margin-bottom: 45px;
-    }
+    h2 { margin-bottom: 45px; }
   }
 
   &__form {
@@ -29,9 +27,7 @@
     flex-grow: 1;
 
     &.sending {
-      .form-loader {
-        display: flex;
-      }
+      .form-loader { display: flex; }
     }
 
     .form-loader {
@@ -47,104 +43,13 @@
       background-color: rgba(255, 255, 255, 0.75);
     }
 
-    .form-group {
-      position: relative;
-      z-index: 1;
-      padding-bottom: 20px;
-
-      &__validation {
-        position: absolute;
-        z-index: 2;
-        bottom: 10px;
-        margin: 0;
-        font-weight: 400;
-        font-size: 8px;
-        white-space: nowrap;
-        color: $error;
-      }
-    }
-
-    .input-wrapper {
-      position: relative;
-      margin-bottom: 3px;
-
-      label {
-        position: absolute;
-        height: 30px;
-        display: inline-flex;
-        align-items: center;
-        left: 0;
-        top: 50%;
-        margin-top: -15px;
-        color: #999;
-        font-weight: 500;
-        font-size: 13px;
-        transition: all $default-duration;
-      }
-
-      input {
-        position: relative;
-        display: inline-flex;
-        height: 30px;
-        width: 100%;
-        border: none;
-        outline: none;
-        border-bottom: 1px solid $primary;
-        &.hasError {
-          border-bottom: 1px solid $error;
-          &:focus {
-            border-bottom: 2px solid $error;
-          }
-        }
-
-        &.hasValue {
-          & + label {
-            top: 0;
-            font-size: 9px;
-          }
-        }
-
-        &:focus {
-          border-bottom: 2px solid $primary-hover;
-          & + label {
-            top: 0;
-            font-size: 9px;
-          }
-        }
-      }
-    }
-
     .form-controls {
       margin-top: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      button {
-        margin-bottom: 15px;
-      }
-    }
-
-    button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background-color: $primary;
-      color: white;
-      outline: 0;
-      border: 0;
-      border-radius: 8px;
-      width: 100%;
-      padding: 12px;
-      font-weight: 500;
-      font-size: 13px;
-      line-height: 13px;
-      cursor: pointer;
-      transition-property: background-color;
-      transition-duration: $default-duration;
-      &:hover {
-        background-color: $primary-hover;
-      }
+      button { margin-bottom: 15px; }
     }
   }
 }

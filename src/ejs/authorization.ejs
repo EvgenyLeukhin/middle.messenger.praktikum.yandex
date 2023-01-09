@@ -16,38 +16,26 @@
         </div>
 
         <!-- login -->
-        <div class="form-group">
-          <div class="input-wrapper">
-            <input
-              id="authorization__login"
-              type="text"
-              name="login"
-              value="ivanivanov"
-            />
-            <label for="login">Логин</label>
-          </div>
-
-          <p class="form-group__validation"></p>
-        </div>
+        <%- include('./components/form-group', {
+          label: 'Логин',
+          id: 'authorization__login',
+          type: 'text',
+          name: 'login',
+          value: 'ivanivanov',
+        }) -%>
 
         <!-- password -->
-        <div class="form-group">
-          <div class="input-wrapper">
-            <input
-              id="authorization__password"
-              type="password"
-              name="password"
-              value="ivanivanov"
-            />
-            <label for="password">Пароль</label>
-          </div>
-
-          <p class="form-group__validation"></p>
-        </div>
+        <%- include('./components/form-group', {
+          label: 'Пароль',
+          id: 'authorization__password',
+          type: 'password',
+          name: 'password',
+          value: 'ivanivanov',
+        }) -%>
 
         <!-- controls -->
         <div class="form-controls">
-          <button type="submit">Авторизоваться</button>
+          <%- include('./components/button', { text: 'Авторизоваться', type: 'submit'}) -%>
           <a href="registration.ejs">Нет аккаунта?</a>
         </div>
       </form>
