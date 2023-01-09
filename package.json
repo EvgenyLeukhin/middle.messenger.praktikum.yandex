@@ -21,7 +21,9 @@
     "express": "^4.18.2",
     "normalize.css": "^8.0.1",
     "parcel": "^2.8.2",
-    "parcel-transformer-ejs": "^1.0.1"
+    "parcel-transformer-ejs": "^1.0.1",
+    "path-browserify": "^1.0.0",
+    "process": "^0.11.10"
   },
   "repository": {
     "type": "git",

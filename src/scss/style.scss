@@ -9,15 +9,15 @@
 // pages
 @import "pages/error-page";
 @import "pages/authorization";
-@import "pages/chat";
 @import "pages/registration";
 @import "pages/user-settings";
+@import "pages/chat";
 
 // common styles
 body {
-  background: $gray-light;
-  color: $text-black;
+  background-color: $gray-light;
   font-family: $base-font;
+  color: $text-black;
 }
 
 main {
