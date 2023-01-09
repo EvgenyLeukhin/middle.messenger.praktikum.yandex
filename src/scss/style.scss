@@ -2,16 +2,16 @@
 @import "custom/reset";
 
 // components
-@import "../components/button/button";
-@import "../components/page-wrapper/page-wrapper";
+@import "components/button";
+@import "components/page-wrapper";
 
 // pages
-@import "../pages/404/404";
-@import "../pages/500/500";
-@import "../pages/authorization/authorization";
-@import "../pages/chat/chat";
-@import "../pages/registration/registration";
-@import "../pages/user-settings/user-settings";
+@import "pages/404";
+@import "pages/500";
+@import "pages/authorization";
+@import "pages/chat";
+@import "pages/registration";
+@import "pages/user-settings";
 
 // common styles
 body {
@@ -26,28 +26,16 @@ body {
   height: 100%;
 }
 
-header, footer {
-  min-height: 20px;
-}
-
 main {
   flex-grow: 1;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
-h1 {
+h2 {
+  font-size: $title-size;
   margin-top: 0;
 }
 
-.todo-list {
-  margin-bottom: 0;
-}
-
 .container {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0 15px;
-  outline: 1px dashed gray;
+  margin: 0 auto;
 }

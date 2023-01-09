@@ -5,9 +5,9 @@
   "author": "Evgeny Leukhin",
   "license": "MIT",
   "scripts": {
-    "start": "parcel src/pages/chat/chat.ejs --open --port 3000",
+    "start": "parcel src/ejs/*.ejs --open --port 3000",
     "dev": "yarn start",
-    "build": "parcel build src/pages/chat/chat.ejs",
+    "build": "parcel build src/ejs/*.ejs",
     "serve": "node src/js/server.js"
   },
   "keywords": [
