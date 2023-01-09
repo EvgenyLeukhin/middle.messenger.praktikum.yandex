@@ -2,8 +2,9 @@
 @import "custom/reset";
 
 // components
-@import "components/button";
 @import "components/page-wrapper";
+@import "components/loader";
+@import "components/button";
 
 // pages
 @import "pages/404";
@@ -20,22 +21,35 @@ body {
   font-family: $base-font;
 }
 
-.app-wrapper {
+main {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-main {
-  flex-grow: 1;
-}
-
 h2 {
   font-size: $title-size;
-  margin-top: 0;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+  font-weight: 500;
+  font-size: 11px;
+  transition: color $default-duration;
+  &:hover {
+    color: $primary-hover;
+  }
 }
 
 .container {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+// text statuses
+.primary { color: $primary; }
+.success { color: $success }
+.warning { color: $warning }
+.error { color: $error; }

@@ -2,7 +2,10 @@ $base-font: 'Inter', sans-serif;
 
 // statuses
 $primary: #3369F3;
-$danger: #FF2F2F;
+$primary-hover: darken($primary, 15%);
+$success: #2CC990;
+$warning: #FEC606;
+$error: #FF2F2F;
 
 // text
 $text-black: #1E1E1E;
@@ -12,5 +15,8 @@ $title-size: 20px;
 // backgrounds
 $gray-light: #FBFBFB;
 $gray-normal: #EFEFEF;
-$gray-dark: rgba(0,0,0, 0.5);
+$gray-dark: #E5E5E5;
+$overlay: rgba(0,0,0, 0.5);
 $selected: #E4EDFD;
+
+$default-duration: 230ms;
