@@ -1,5 +1,7 @@
 <%- include('./components/page-wrapper-start', { title: 'User settings | Web-messanger' }) -%>
 
+<%- include('./components/go-back-button', { link: '/' }) -%>
+
 <main>
   <section class="user-settings">
     <div class="container">
@@ -39,9 +41,9 @@
 
       <div class="user-settings__bottom">
         <ul class="user-settings__controls-list">
-          <li><a href="#" class="primary">Изменить данные</a></li>
-          <li><a href="#" class="primary">Изменить пароль</a></li>
-          <li><a href="#" class="error">Выйти</a></li>
+          <li><a href="user-settings-edit.ejs" class="text-primary">Изменить данные</a></li>
+          <li><a href="user-settings-change-password.ejs" class="text-primary">Изменить пароль</a></li>
+          <li><a href="authorization.ejs" class="text-error">Выйти</a></li>
         </ul>
       </div>
     </div>

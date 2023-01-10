@@ -1,10 +1,12 @@
 @import "custom/vars";
+@import "custom/mixins";
 @import "custom/reset";
 
 // components
 @import "components/form-group";
 @import "components/loader";
 @import "components/button";
+@import "components/go-back-button";
 
 // pages
 @import "pages/error-page";
@@ -46,19 +48,45 @@ a {
 }
 
 // text statuses
-.primary {
+.text-primary {
   color: $primary;
+  transition: color $default-duration;
   &:hover { color: darken($primary, 15%); }
 }
-.success {
+.text-success {
   color: $success;
+  transition: color $default-duration;
   &:hover { color: darken($success, 15%); }
 }
-.warning {
+.text-warning {
   color: $warning;
+  transition: color $default-duration;
   &:hover { color: darken($warning, 15%); }
 }
-.error {
+.text-error {
   color: $error;
+  transition: color $default-duration;
   &:hover { color: darken($error, 15%); }
+}
+
+// bg statuses
+.bg-primary {
+  background-color: $primary;
+  transition: background-color $default-duration;
+  &:hover { background-color: darken($primary, 15%); }
+}
+.bg-success {
+  background-color: $success;
+  transition: background-color $default-duration;
+  &:hover { background-color: darken($success, 15%); }
+}
+.bg-warning {
+  background-color: $warning;
+  transition: background-color $default-duration;
+  &:hover { background-color: darken($warning, 15%); }
+}
+.bg-error {
+  background-color: $error;
+  transition: background-color $default-duration;
+  &:hover { background-color: darken($error, 15%); }
 }
