@@ -1,3 +1,3 @@
 'use strict';
 
-console.log('Common script');
+console.log('common script');

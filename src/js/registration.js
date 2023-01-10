@@ -4,6 +4,7 @@ import { handleForm } from './utils/form';
 
 handleForm('registration');
 
+console.log('registration page');
 
 
 // import ejs from 'ejs';
