@@ -38,11 +38,9 @@ h2 {
 
 a {
   text-decoration: none;
-  color: $primary;
   font-weight: 500;
   font-size: 11px;
-  transition: color $default-duration;
-  &:hover { color: darken($primary, 15%); }
+  @include status-text-color($primary);
 }
 
 .container {

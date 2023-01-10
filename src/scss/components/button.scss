@@ -2,7 +2,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: $primary;
   color: white;
   outline: 0;
   border: 0;
@@ -13,10 +12,6 @@
   font-size: 13px;
   line-height: 13px;
   cursor: pointer;
-  transition-property: background-color;
-  transition-duration: $default-duration;
 
-  &:hover {
-    background-color: darken($primary, 15%);;
-  }
+  @include status-bg-color($primary);
 }
