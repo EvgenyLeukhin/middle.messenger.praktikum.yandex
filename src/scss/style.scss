@@ -66,14 +66,14 @@ a {
 
 // bg statuses
 .bg-primary {
-  @include status-text-color($primary);
+  @include status-bg-color($primary);
 }
 .bg-success {
-  @include status-text-color($success);
+  @include status-bg-color($success);
 }
 .bg-warning {
-  @include status-text-color($warning);
+  @include status-bg-color($warning);
 }
 .bg-error {
-  @include status-text-color($error);
+  @include status-bg-color($error);
 }
