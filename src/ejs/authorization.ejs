@@ -33,7 +33,8 @@
 
         <!-- controls -->
         <div class="form-controls">
-          <%- include('./components/button', { text: 'Авторизоваться', type: 'submit'}) -%>
+          <%-include('./components/button', { text: 'Авторизоваться', type: 'submit', statusClass: 'bg-error' }) -%>
+
           <a href="registration.ejs">Нет аккаунта?</a>
         </div>
       </form>
