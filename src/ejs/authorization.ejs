@@ -11,6 +11,7 @@
         action=""
         method="post"
       >
+        <!-- form-loader -->
         <%- include('./components/form-loader') -%>
 
         <!-- login -->
@@ -33,7 +34,7 @@
 
         <!-- controls -->
         <div class="form-controls">
-          <%-include('./components/button', { text: 'Авторизоваться', type: 'submit', statusClass: 'bg-error' }) -%>
+          <%-include('./components/button', { text: 'Авторизоваться' }) -%>
 
           <a href="registration.ejs">Нет аккаунта?</a>
         </div>
