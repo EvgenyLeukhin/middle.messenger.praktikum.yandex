@@ -37,9 +37,7 @@ a {
   font-weight: 500;
   font-size: 11px;
   transition: color $default-duration;
-  &:hover {
-    color: $primary-hover;
-  }
+  &:hover { color: darken($primary, 15%); }
 }
 
 .container {
@@ -48,7 +46,19 @@ a {
 }
 
 // text statuses
-.primary { color: $primary; }
-.success { color: $success }
-.warning { color: $warning }
-.error { color: $error; }
+.primary {
+  color: $primary;
+  &:hover { color: darken($primary, 15%); }
+}
+.success {
+  color: $success;
+  &:hover { color: darken($success, 15%); }
+}
+.warning {
+  color: $warning;
+  &:hover { color: darken($warning, 15%); }
+}
+.error {
+  color: $error;
+  &:hover { color: darken($error, 15%); }
+}
