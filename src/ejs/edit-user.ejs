@@ -81,6 +81,18 @@
   </section>
 </main>
 
+<div class="change-avatar-modal" hidden>
+  <div class="change-avatar-modal__content">
+    <div class="change-avatar-modal__close"></div>
+    <h4>Загрузите файл</h4>
+    <label for="user-avatar" class="text-primary">
+      Выбрать файл на <br />компьютере
+    </label>
+    <input type="file" name="user-avatar" id="user-avatar">
+    <%- include('./components/button', { text: 'Поменять' }) -%>
+  </div>
+</div>
+
 <script type="module" src="../js/edit-user.js"></script>
 
 <%- include('./components/page-wrapper-end') -%>
