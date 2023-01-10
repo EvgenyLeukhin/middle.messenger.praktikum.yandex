@@ -16,9 +16,7 @@
     min-height: 615px;
     @include mobile { width: 100%; }
 
-    h2 {
-      margin-bottom: 45px;
-    }
+    h2 { margin-bottom: 45px; }
   }
 
   &__form {
