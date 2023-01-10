@@ -16,6 +16,7 @@
     border-radius: 12px;
     width: 250px;
     min-height: 300px;
+    @include mobile { width: 100%; }
 
     h2 {
       font-style: normal;

@@ -21,7 +21,7 @@
     li {
       font-size: 13px;
       padding: 9px 0;
-      border-bottom: 1px solid #EAEAEA;
+      border-bottom: 1px solid $gray-dark;
       &:last-child {
         border-bottom: none;
       }
@@ -61,7 +61,7 @@
       justify-content: space-between;
 
       b { font-weight: 500; }
-      span { color: #999; }
+      span { color: $text-gray; }
     }
   }
 
