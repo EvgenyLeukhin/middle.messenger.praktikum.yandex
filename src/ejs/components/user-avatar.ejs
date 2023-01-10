@@ -1,6 +1,12 @@
 <div class="user-avatar">
   <div
     class="user-avatar__image"
+    style="background-image:
+      <%=
+        typeof image != 'undefined'
+          ? image
+          : 'url(../../public/images/avatar-template.svg)'
+      %>"
   >
   </div>
   <div class="user-avatar__name"><%= name %></div>
