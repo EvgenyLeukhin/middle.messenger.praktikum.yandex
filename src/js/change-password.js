@@ -2,4 +2,4 @@
 
 import { handleForm } from './utils/form';
 
-handleForm('authorization');
+handleForm('change-password');

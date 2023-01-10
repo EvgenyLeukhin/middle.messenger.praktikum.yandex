@@ -31,19 +31,6 @@
       .form-loader { display: flex; }
     }
 
-    .form-loader {
-      display: none;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      z-index: 2;
-      top: -5px;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: $overlay-white;
-    }
-
     .form-controls {
       margin-top: auto;
       display: flex;

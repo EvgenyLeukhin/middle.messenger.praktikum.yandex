@@ -6,14 +6,12 @@
       <h2>Вход</h2>
 
       <form
-        id="authorization__form"
+        id="authorization"
         class="authorization__form"
         action=""
         method="post"
       >
-        <div class="form-loader">
-          <%- include('./components/loader') -%>
-        </div>
+        <%- include('./components/form-loader') -%>
 
         <!-- login -->
         <%- include('./components/form-group', {

@@ -4,7 +4,7 @@
 
 // components
 @import "components/form-group";
-@import "components/loader";
+@import "components/form-loader";
 @import "components/button";
 @import "components/go-back-button";
 
@@ -13,6 +13,7 @@
 @import "pages/authorization";
 @import "pages/registration";
 @import "pages/user-settings";
+@import "pages/change-password";
 @import "pages/chat";
 
 // common styles

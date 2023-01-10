@@ -2,7 +2,7 @@
 
 import { handleForm } from './utils/form';
 
-handleForm('registration__form');
+handleForm('registration');
 
 
 
