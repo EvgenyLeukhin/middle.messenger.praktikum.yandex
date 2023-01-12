@@ -8,7 +8,7 @@
 
       <!-- Поиск -->
       <div class="input-wrapper">
-        <input type="text" name="search-chat" id="search-chat">
+        <input type="text" name="search-chat" id="search-chat" />
         <label for="search-chat">
           <span>Поиск</span>
         </label>
@@ -269,7 +269,21 @@
 
     <div class="content"></div>
 
-    <footer>FOOTER</footer>
+    <footer>
+      <!-- file upload -->
+      <div>
+        <label for="upload-file"></label>
+        <input type="file" name="upload-file" id="upload-file" />
+      </div>
+
+      <!-- enter message -->
+      <div class="input-wrapper">
+        <input type="text" name="enter-message" id="enter-message" placeholder="Сообщение"/>
+      </div>
+
+      <!-- send button -->
+      <%- include('./components/send-button') -%>
+    </footer>
   </main>
 </div>
 
