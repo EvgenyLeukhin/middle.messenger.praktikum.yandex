@@ -23,3 +23,32 @@
 - Тестовый стенд: [Netlify](https://www.netlify.com/)
 - Шрифты: [Google Fonts](https://fonts.google.com/)
 - Изображения: [Unsplash](https://unsplash.com/)
+
+<div class="container">
+  <h2>Chat</h2>
+  <ul>
+    <li>404 +++</li>
+    <li>500 +++</li>
+    <li>Login+++</li>
+    <li>Registration +++</li>
+    <li>User settings +++</li>
+    <li>Chat ---</li>
+    <li>---------------</li>
+    <li>Scripts connect +++</li>
+    <li>Adaptivity +++</li>
+    <li>Badges ---</li>
+    <li>EJS forEach ---</li>
+    <li>Ссылку на открытый PR в Readme (ветка main) ---</li>
+  </ul>
+
+  <h2>Страницы</h2>
+  <ul>
+    <li><a href="404.ejs">404</a></li>
+    <li><a href="500.ejs">500</a></li>
+    <li><a href="authorization.ejs">authorization</a></li>
+    <li><a href="registration.ejs">registration</a></li>
+    <li><a href="user-settings.ejs">user-settings</a></li>
+    <li><a href="edit-user.ejs">edit-user</a></li>
+    <li><a href="change-password.ejs">change-password</a></li>
+  </ul>
+</div>

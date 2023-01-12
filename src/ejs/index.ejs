@@ -1,36 +1,35 @@
 <%- include('./components/page-wrapper-start', { title: 'Chat | Web-messanger' }) -%>
 
-<main>
-  <section class="chat">
-    <div class="container">
-      <h2>Chat</h2>
-      <ul>
-        <li>404 +++</li>
-        <li>500 +++</li>
-        <li>Login+++</li>
-        <li>Registration +++</li>
-        <li>User settings +++</li>
-        <li>Chat ---</li>
-        <li>---------------</li>
-        <li>Scripts connect +++</li>
-        <li>Adaptivity +++</li>
-        <li>Badges ---</li>
-        <li>EJS forEach ---</li>
-        <li>Ссылку на открытый PR в Readme (ветка main) ---</li>
-      </ul>
+<div class="chat">
+  <aside>
+    <header></header>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </aside>
 
-      <h2>Страницы</h2>
-      <ul>
-        <li><a href="404.ejs">404</a></li>
-        <li><a href="500.ejs">500</a></li>
-        <li><a href="authorization.ejs">authorization</a></li>
-        <li><a href="registration.ejs">registration</a></li>
-        <li><a href="user-settings.ejs">user-settings</a></li>
-        <li><a href="edit-user.ejs">edit-user</a></li>
-        <li><a href="change-password.ejs">change-password</a></li>
-      </ul>
-    </div>
-  </section>
-</main>
+  <main>
+    <header>
+      <a href="user-settings.ejs">
+        <div class="avatar">
+          <div
+            class="avatar__image"
+            style="background-image:url(https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=881&q=80)"
+          >
+          </div>
+          <div class="avatar__name">Иван</div>
+        </div>
+      </a>
+
+      <div class="controls">
+        ...
+      </div>
+    </header>
+    <footer></footer>
+  </main>
+</div>
 
 <%- include('./components/page-wrapper-end') -%>
