@@ -4,6 +4,8 @@
 
 Текущий спринт: **1**
 
+
+- [PR #1](https://github.com/EvgenyLeukhin/middle.messenger.praktikum.yandex/pull/2)
 - Разработчик: Евгений Леухин [[Email](mailto:EvgenyLeukhin@yandex.ru), [VK](https://vk.com/leukhin_ei), [Telegram](https://telegram.me/eleukhin)]
 - Netlify test stand: [Link](https://timely-profiterole-8607d1.netlify.app)
 - Дизайн-основа: [Дизайн](https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1&t=mOAMJ9bwrIzfzlx3-0)
@@ -24,7 +26,7 @@
 - Шрифты: [Google Fonts](https://fonts.google.com/)
 - Изображения: [Unsplash](https://unsplash.com/)
 
-<div class="container">
+<!-- <div class="container">
   <h2>Chat</h2>
   <ul>
     <li>404 +++</li>
@@ -32,13 +34,13 @@
     <li>Login+++</li>
     <li>Registration +++</li>
     <li>User settings +++</li>
-    <li>Chat ---</li>
-    <li>---------------</li>
+    <li>Chat +++</li>
     <li>Scripts connect +++</li>
     <li>Adaptivity +++</li>
+    <li>EJS forEach +++</li>
+    <li>Ссылку на открытый PR в Readme (ветка main) +++</li>
+    <li>---------------</li>
     <li>Badges ---</li>
-    <li>EJS forEach ---</li>
-    <li>Ссылку на открытый PR в Readme (ветка main) ---</li>
   </ul>
 
   <h2>Страницы</h2>
@@ -51,4 +53,4 @@
     <li><a href="edit-user.ejs">edit-user</a></li>
     <li><a href="change-password.ejs">change-password</a></li>
   </ul>
-</div>
+</div> -->
