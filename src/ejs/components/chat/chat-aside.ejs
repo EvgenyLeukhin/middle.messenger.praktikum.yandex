@@ -14,6 +14,8 @@
 
   <!-- chat-list -->
   <ul class="chat-aside__list">
-    <%- include('./chat-item') -%>
+    <% for(let i = 0; i < 20; i++) {%>
+      <%- include('./chat-item') -%>
+    <% } %>
   </ul>
 </aside>
