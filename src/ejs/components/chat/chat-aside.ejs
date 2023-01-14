@@ -4,7 +4,12 @@
     <a href="user-settings.ejs">Профиль</a>
 
     <!-- Поиск -->
-    <%- include('./chat-search-field') -%>
+    <div class="chat-search-wrapper">
+      <input type="text" name="chat-search" id="chat-search" />
+      <label for="chat-search">
+        <span>Поиск</span>
+      </label>
+    </div>
   </div>
 
   <!-- chat-list -->
