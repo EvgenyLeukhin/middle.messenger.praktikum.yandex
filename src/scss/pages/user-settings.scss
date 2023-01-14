@@ -1,0 +1,46 @@
+.user-settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  background-color: white;
+
+  .container {
+    width: 540px;
+
+    @include mobile {
+      padding-top: 70px;
+      width: 100%;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      font-size: 13px;
+      padding: 9px 0;
+      border-bottom: 1px solid $gray-dark;
+      &:last-child { border-bottom: none; }
+    }
+  }
+
+  &__middle { margin-bottom: 40px; }
+
+  &__data-list {
+    li {
+      display: flex;
+      justify-content: space-between;
+
+      b { font-weight: 500; }
+      span { color: $text-gray; }
+    }
+  }
+
+    &__bottom { color: inherit; }
+
+    &__controls-list {
+      a { font-size: 13px; }
+    }
+}

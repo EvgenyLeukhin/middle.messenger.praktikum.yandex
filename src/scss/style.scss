@@ -1,0 +1,84 @@
+// custom
+@import "custom/vars";
+@import "custom/mixins";
+@import "custom/reset";
+
+// components
+@import "components/chat/chat-aside";
+@import "components/chat/chat-day-content";
+@import "components/chat/chat-footer";
+@import "components/chat/chat-header";
+@import "components/chat/chat-item";
+@import "components/button";
+@import "components/form-group";
+@import "components/form-loader";
+@import "components/go-back-button";
+@import "components/send-button";
+@import "components/user-avatar";
+
+// pages
+@import "pages/error-page";
+@import "pages/authorization";
+@import "pages/registration";
+@import "pages/user-settings";
+@import "pages/edit-user";
+@import "pages/change-password";
+@import "pages/chat";
+
+// common styles
+body {
+  background-color: $gray-light;
+  font-family: $base-font;
+  color: $text-black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+h2 {
+  font-size: $title-size;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 11px;
+  @include status-text-color($primary);
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+// text statuses
+.text-primary {
+  @include status-text-color($primary);
+}
+.text-success {
+  @include status-text-color($success);
+}
+.text-warning {
+  @include status-text-color($warning);
+}
+.text-error {
+  @include status-text-color($error);
+}
+
+// bg statuses
+.bg-primary {
+  @include status-bg-color($primary);
+}
+.bg-success {
+  @include status-bg-color($success);
+}
+.bg-warning {
+  @include status-bg-color($warning);
+}
+.bg-error {
+  @include status-bg-color($error);
+}

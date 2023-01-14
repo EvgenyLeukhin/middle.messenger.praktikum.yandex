@@ -1,0 +1,14 @@
+<div class="user-avatar">
+  <div
+    class="user-avatar__image <%= typeof editable != 'undefined' ? 'editable' : null %>"
+    style="background-image:
+      <%=
+        typeof image != 'undefined'
+          ? image
+          : 'url(../../public/images/avatar-template.svg)'
+      %>"
+  >
+    <div class="avatar-overlay">Поменять<br />аватар</div>
+  </div>
+  <div class="user-avatar__name"><%= name %></div>
+</div>

@@ -1,0 +1,23 @@
+<%- include('./components/page-wrapper-start', { title: 'Chat | Web-messanger' }) -%>
+
+<div class="chat">
+  <!-- chat-aside -->
+  <%- include('./components/chat/chat-aside') -%>
+
+  <main>
+    <!-- chat-header -->
+    <%- include('./components/chat/chat-header') -%>
+
+    <!-- chat-content -->
+    <div class="chat-content">
+      <%- include('./components/chat/chat-day-content') -%>
+    </div>
+
+    <!-- chat-footer -->
+    <%- include('./components/chat/chat-footer') -%>
+  </main>
+</div>
+
+<script type="module" src="../js/chat.js"></script>
+
+<%- include('./components/page-wrapper-end') -%>
