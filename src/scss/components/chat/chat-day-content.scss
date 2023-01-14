@@ -28,7 +28,7 @@
         max-width: 400px;
         display: inline-flex;
         padding: 11px;
-        padding-right: 50px;
+        padding-right: 40px;
         margin-bottom: 0;
       }
 
@@ -64,24 +64,37 @@
         }
       }
 
-      &.sended {
-        .time {
-
-        }
-      }
-
-      &.read {
-        .time {
-
-        }
-      }
-
       &.with-image {
         .time {
           padding: 2px 7px;
           color: white;
           background: rgba(82, 82, 82, 0.5);
           border-radius: 30px;
+        }
+      }
+
+      &:last-child {
+        &.sended {
+          p { padding-right: 50px; }
+
+          .time {
+            padding-left: 11px;
+            background-repeat: no-repeat;
+            // background-image: url(../../public/images/icons/read-check.svg);
+            background-position: left 75%;
+          }
+        }
+
+        &.read {
+          p { padding-right: 50px; }
+
+          .time {
+            color: $primary;
+            padding-left: 11px;
+            background-repeat: no-repeat;
+            background-image: url(../../public/images/icons/read-check.svg);
+            background-position: left 75%;
+          }
         }
       }
     }
