@@ -9,25 +9,23 @@ const updateAvatarButton = document.querySelector('.avatar-overlay');
 const updateAvatarModal = document.querySelector('.change-avatar-modal');
 const updateAvatarModalCloseButton = document.querySelector('.change-avatar-modal__close');
 
-function handleModal(val) {
+function hideModal(val) {
   updateAvatarModal.hidden = val;
 }
 
-
+// open modal by click on avatar
 updateAvatarButton.addEventListener('click', (e) => {
   e.preventDefault();
-  handleModal(false);
-  window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      handleModal(true);
-      window.removeEventListener('keydown');
-    }
-  });
+  hideModal(false);
 });
 
+// close modal by click on modal close-cross
 updateAvatarModalCloseButton.addEventListener('click', (e) => {
   e.preventDefault();
-  handleModal(true);
-  window.removeEventListener('keydown');
+  hideModal(true);
 });
 
+// close modal on Escape key
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') hideModal(true);
+});
