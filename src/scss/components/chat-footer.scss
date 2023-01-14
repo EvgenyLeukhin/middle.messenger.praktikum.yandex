@@ -1,0 +1,33 @@
+.chat-footer {
+  display: flex;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 53px;
+  border-top: 1px solid #EAEAEA;
+
+  & > div:first-child {
+    label {
+      flex-grow: 0;
+      flex-shrink: 0;
+      display: inline-flex;
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../../public/images/icons/upload.svg);
+      cursor: pointer;
+    }
+
+    input {
+      display: none;
+    }
+  }
+
+  a:last-child {
+    color: inherit;
+  }
+}

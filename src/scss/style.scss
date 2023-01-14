@@ -4,9 +4,13 @@
 @import "custom/reset";
 
 // components
+@import "components/button";
+@import "components/chat-aside";
+@import "components/chat-footer";
+@import "components/chat-header";
+@import "components/chat-search-field";
 @import "components/form-group";
 @import "components/form-loader";
-@import "components/button";
 @import "components/go-back-button";
 @import "components/send-button";
 @import "components/user-avatar";
