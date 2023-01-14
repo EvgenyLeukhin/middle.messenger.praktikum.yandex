@@ -4,11 +4,11 @@
 @import "custom/reset";
 
 // components
+@import "components/chat/chat-aside";
+@import "components/chat/chat-footer";
+@import "components/chat/chat-header";
+@import "components/chat/chat-search-field";
 @import "components/button";
-@import "components/chat-aside";
-@import "components/chat-footer";
-@import "components/chat-header";
-@import "components/chat-search-field";
 @import "components/form-group";
 @import "components/form-loader";
 @import "components/go-back-button";
