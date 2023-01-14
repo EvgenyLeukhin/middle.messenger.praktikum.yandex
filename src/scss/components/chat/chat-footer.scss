@@ -5,8 +5,9 @@
   flex-shrink: 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  height: 53px;
+  height: $header-height;
   border-top: 1px solid #EAEAEA;
+  background-color: white;
 
   // file upload
   & > div:first-child {

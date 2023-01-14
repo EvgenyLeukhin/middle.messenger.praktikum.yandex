@@ -10,6 +10,25 @@
     padding-right: 20px;
     background-color: white;
 
-    .chat-content { flex-grow: 1; }
+    .chat-content {
+      flex-grow: 1;
+      max-height: calc(100vh - ($header-height + $footer-height));
+      overflow-y: auto;
+      // scrollbar track width
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      // scrollbar track background (полоска)
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+
+      // scrollbar thumb (бегунок)
+      &::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 8px;
+      }
+    }
   }
 }
