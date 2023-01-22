@@ -1,10 +1,8 @@
-import { EventBus } from "./eventBus";
-
-// Нельзя создавать экземпляр данного класса
 class Block {
   static EVENTS = {
     INIT: "init",
     FLOW_CDM: "flow:component-did-mount",
+    FLOW_CDU: "flow:component-did-update",
     FLOW_RENDER: "flow:render"
   };
 
@@ -19,7 +17,6 @@ class Block {
    */
   constructor(tagName = "div", props = {}) {
     const eventBus = new EventBus();
-
     this._meta = {
       tagName,
       props
@@ -36,6 +33,7 @@ class Block {
   _registerEvents(eventBus) {
     eventBus.on(Block.EVENTS.INIT, this.init.bind(this));
     eventBus.on(Block.EVENTS.FLOW_CDM, this._componentDidMount.bind(this));
+    eventBus.on(Block.EVENTS.FLOW_CDU, this._componentDidUpdate.bind(this));
     eventBus.on(Block.EVENTS.FLOW_RENDER, this._render.bind(this));
   }
 
@@ -46,21 +44,22 @@ class Block {
 
   init() {
     this._createResources();
-    this.eventBus().emit(Block.EVENTS.FLOW_RENDER);
+    this.eventBus().emit(Block.EVENTS.FLOW_CDM);
   }
 
   _componentDidMount() {
     this.componentDidMount();
+    this.eventBus().emit(Block.EVENTS.FLOW_RENDER);
   }
 
   componentDidMount(oldProps) {}
 
-    dispatchComponentDidMount() {
-        this.eventBus().emit(Block.EVENTS.FLOW_CDM);
-    }
-
   _componentDidUpdate(oldProps, newProps) {
-    // ...
+    const response = this.componentDidUpdate(oldProps, newProps);
+    if (!response) {
+      return;
+    }
+    this._render();
   }
 
   componentDidUpdate(oldProps, newProps) {
@@ -81,14 +80,13 @@ class Block {
 
   _render() {
     const block = this.render();
-    // Это небезопасный метод для упрощения логики
-    // Используйте шаблонизатор из npm или напишите свой безопасный
-    // Нужно компилировать не в строку (или делать это правильно),
-    // либо сразу превращать в DOM-элементы и возвращать из compile DOM-ноду
+    // Этот небезопасный метод для упрощения логики
+    // Используйте шаблонизатор из npm или напиши свой безопасный
+    // Нужно не в строку компилировать (или делать это правильно),
+    // либо сразу в DOM-элементы превращать из возвращать из compile DOM-ноду
     this._element.innerHTML = block;
   }
 
-    // Переопределяется пользователем. Необходимо вернуть разметку
   render() {}
 
   getContent() {
@@ -96,15 +94,31 @@ class Block {
   }
 
   _makePropsProxy(props) {
-    // Ещё один способ передачи this, но он больше не применяется с приходом ES6+
+    // Можно и так передать this
+    // Такой способ больше не применяется с приходом ES6+
     const self = this;
 
-        // Здесь вам предстоит реализовать метод
-    return props;
+    return new Proxy(props, {
+      get(target, prop) {
+        const value = target[prop];
+        return typeof value === "function" ? value.bind(target) : value;
+      },
+      set(target, prop, value) {
+        target[prop] = value;
+
+        // Запускаем обновление компоненты
+        // Плохой cloneDeep, в след итерации нужно заставлять добавлять cloneDeep им самим
+        self.eventBus().emit(Block.EVENTS.FLOW_CDU, {...target}, target);
+        return true;
+      },
+      deleteProperty() {
+        throw new Error("Нет доступа");
+      }
+    });
   }
 
   _createDocumentElement(tagName) {
-    // Можно сделать метод, который через фрагменты в цикле создаёт сразу несколько блоков
+    // Можно сделать метод, который через фрагменты в цикле создает сразу несколько блоков
     return document.createElement(tagName);
   }
 
@@ -116,5 +130,3 @@ class Block {
     this.getContent().style.display = "none";
   }
 }
-
-export default Block;
