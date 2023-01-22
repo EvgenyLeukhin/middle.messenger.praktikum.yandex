@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEST</title>
+</head>
+<body>
+  <!-- root element -->
+  <div class="app"></div>
+
+
+  <script type="module">
+    import Button from "./components/button/Button";
+    import { render } from "../js/utils/renderDom";
+
+    const button = new Button({
+      className: 'my-class',
+      child: 'Click me',
+    });
+
+    console.log(Button);
+  </script>
+</body>
+</html>
