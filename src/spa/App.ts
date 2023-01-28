@@ -1,3 +1,5 @@
+import render from './render';
+
 import {
   Authorization,
   ChangePassword,
