@@ -1,10 +1,6 @@
-import ejs from 'ejs';
+import * as ejs from 'ejs';
 
-const string = `
-  <section class="error-page">
-    <h1>404</h1>
-  </section>
-`;
+const string = `<%- errorSection %>`;
 
 const template = ejs.compile(string);
 

@@ -4,6 +4,7 @@
 @import "custom/reset";
 
 // components
+@import "../components/ErrorContainer/ErrorContainer";
 @import "components/chat/chat-aside";
 @import "components/chat/chat-day-content";
 @import "components/chat/chat-footer";
@@ -17,7 +18,6 @@
 @import "components/user-avatar";
 
 // pages
-@import "pages/error-page";
 @import "pages/authorization";
 @import "pages/registration";
 @import "pages/user-settings";
@@ -30,6 +30,11 @@ body {
   background-color: $gray-light;
   font-family: $base-font;
   color: $text-black;
+
+  // root-container
+  & > div#root {
+    height: 100%;
+  }
 }
 
 main {
