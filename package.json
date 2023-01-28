@@ -5,9 +5,9 @@
   "author": "Evgeny Leukhin",
   "license": "MIT",
   "scripts": {
-    "start": "parcel src/ejs/*.ejs --open --port 3000",
+    "start": "parcel src/spa/index.html --open --port 3000",
     "dev": "yarn start",
-    "build": "parcel build src/ejs/*.ejs",
+    "build": "parcel build src/spa/index.html",
     "serve": "node src/utils/server.js"
   },
   "keywords": [
