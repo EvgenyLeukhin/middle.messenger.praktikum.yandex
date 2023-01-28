@@ -1,7 +1,6 @@
-'use strict';
+console.log('authorization page');
 
 import { handleForm } from './utils/form';
 
 handleForm('authorization');
 
-console.log('authorization page');
