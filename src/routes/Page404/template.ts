@@ -1,8 +1,8 @@
 import ejs from 'ejs';
 
 const string = `
-  <section class="test-page">
-    <h1>This is test page</h1>
+  <section class="error-page">
+    <h1>404</h1>
   </section>
 `;
 
