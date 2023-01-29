@@ -1,13 +1,39 @@
 import template from './template';
 import Component from '../../utils/spa/Component';
-import { FormLoader } from '../../components';
+import { FormLoader, Button } from '../../components';
+import FormInput from '../../components/FormInput';
 
-class Profile extends Component {
+class Authorization extends Component {
   constructor(props: Record<string, any> = {}) {
     const formLoader = new FormLoader(props);
-    const authNameInput = null
-    const authPasswordInput = null
-    const authSubmitButton = null
+
+    const authNameInput = new FormInput({
+      id: 'authorization__login',
+      type: 'text',
+      name: 'login',
+      value: 'ivanivanov',
+      label: 'Логин',
+    });
+
+    const authPasswordInput = new FormInput({
+      id: 'authorization__password',
+      type: 'password',
+      name: 'password',
+      value: 'ivanivanov',
+      label: 'Пароль',
+    });
+
+    const authSubmitButton = new Button({
+      buttonText: 'Сохранить',
+
+      // formSubmit
+      events: {
+        click: (e) => {
+          e.preventDefault();
+          alert('Form submit')
+        },
+      },
+    });
 
     super('div', {
       formLoader,
@@ -23,4 +49,4 @@ class Profile extends Component {
   }
 }
 
-export default Profile;
+export default Authorization;

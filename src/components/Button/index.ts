@@ -9,7 +9,7 @@ type TButton =  {
   events?: { click: (e: Event) => void };
 }
 
-class ErrorContainer extends Component {
+class Button extends Component {
   constructor(props: TButton) {
     super('div', props);
   }
@@ -19,4 +19,4 @@ class ErrorContainer extends Component {
   }
 }
 
-export default ErrorContainer;
+export default Button;

@@ -1,7 +1,7 @@
 import * as ejs from 'ejs';
 
 const string = `
-  <div class="form-loader">
+  <div class="FormLoader">
     <div class="lds-ellipsis">
       <div></div>
       <div></div>

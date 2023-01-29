@@ -3,7 +3,7 @@ import * as ejs from 'ejs';
 // ejs variables <%- %> as props
 const string = `
   <main>
-    <section class="error-page">
+    <section class="ErrorPage">
       <div class="container">
         <h2><%- errorCode %></h2>
         <p><%- errorMessage %> </p>

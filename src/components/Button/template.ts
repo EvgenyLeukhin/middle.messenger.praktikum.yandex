@@ -3,7 +3,7 @@ import * as ejs from 'ejs';
 const string = `
   <button
     class="
-      button
+      Button
       <%= typeof buttonStatus != 'undefined' ? buttonStatus : 'bg-primary' %>
     "
     type="<%= typeof buttonType !='undefined' ? buttonType : 'submit' %>"
