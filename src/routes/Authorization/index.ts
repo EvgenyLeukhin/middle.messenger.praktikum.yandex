@@ -1,7 +1,6 @@
 import template from './template';
 import Component from '../../utils/spa/Component';
-import { FormLoader, Button } from '../../components';
-import FormInput from '../../components/FormInput';
+import { FormLoader, FormInput, Button } from '../../components';
 
 class Authorization extends Component {
   constructor(props: Record<string, any> = {}) {
@@ -26,7 +25,7 @@ class Authorization extends Component {
     const authSubmitButton = new Button({
       buttonText: 'Сохранить',
 
-      // formSubmit
+      // auth formSubmit
       events: {
         click: (e) => {
           e.preventDefault();
