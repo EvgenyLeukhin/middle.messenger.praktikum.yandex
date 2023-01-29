@@ -1,6 +1,6 @@
 console.log('edit-user page');
 
-import { handleForm } from './utils/form';
+import { handleForm } from '../utils/form';
 
 handleForm('edit-user');
 

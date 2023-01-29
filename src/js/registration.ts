@@ -1,6 +1,6 @@
 console.log('registration page');
 
-import { handleForm } from './utils/form';
+import { handleForm } from '../utils/form';
 
 handleForm('registration');
 
