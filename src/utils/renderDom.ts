@@ -1,5 +1,3 @@
-// utils/renderDOM.js
-
 export function render(query, block) {
   const root = document.querySelector(query);
 
