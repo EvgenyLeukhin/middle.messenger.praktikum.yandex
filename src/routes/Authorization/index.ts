@@ -4,10 +4,10 @@ import { FormLoader } from '../../components';
 
 class Profile extends Component {
   constructor(props: Record<string, any> = {}) {
-    const formLoader = new FormLoader();
-    const authNameInput = new FormLoader();
-    const authPasswordInput = new FormLoader();
-    const authSubmitButton = new FormLoader();
+    const formLoader = new FormLoader(props);
+    const authNameInput = null
+    const authPasswordInput = null
+    const authSubmitButton = null
 
     super('div', {
       formLoader,
