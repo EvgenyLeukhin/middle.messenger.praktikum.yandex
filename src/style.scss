@@ -17,13 +17,13 @@
 @import "scss/components/send-button";
 @import "scss/components/user-avatar";
 
-// pages
-@import "scss/pages/authorization";
-@import "scss/pages/registration";
-@import "scss/pages/user-settings";
-@import "scss/pages/edit-user";
-@import "scss/pages/change-password";
-@import "scss/pages/chat";
+// routes
+@import "scss/routes/authorization";
+@import "scss/routes/registration";
+@import "scss/routes/user-settings";
+@import "scss/routes/edit-user";
+@import "scss/routes/change-password";
+@import "scss/routes/chat";
 
 // common styles
 body {
