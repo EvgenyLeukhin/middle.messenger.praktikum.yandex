@@ -1,4 +1,4 @@
-import render from './render';
+import render from './spa/render';
 
 import {
   Authorization,
@@ -10,7 +10,7 @@ import {
   Registration,
   TestPage,
   UserSettings,
-} from '../routes';
+} from './routes';
 
 const currentUrl: string = window.location.pathname;
 const rootId: string = '#root';
