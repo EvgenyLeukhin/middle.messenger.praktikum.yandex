@@ -29,7 +29,7 @@ class Authorization extends Component {
       events: {
         click: (e) => {
           e.preventDefault();
-          alert('Form submit')
+          alert('Auth form submit')
         },
       },
     });
