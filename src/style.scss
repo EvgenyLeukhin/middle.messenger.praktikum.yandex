@@ -1,29 +1,29 @@
 // custom
-@import "custom/vars";
-@import "custom/mixins";
-@import "custom/reset";
+@import "scss/custom/vars";
+@import "scss/custom/mixins";
+@import "scss/custom/reset";
 
 // components
-@import "../components/ErrorContainer/ErrorContainer";
-@import "components/chat/chat-aside";
-@import "components/chat/chat-day-content";
-@import "components/chat/chat-footer";
-@import "components/chat/chat-header";
-@import "components/chat/chat-item";
-@import "components/button";
-@import "components/form-group";
-@import "components/form-loader";
-@import "components/go-back-button";
-@import "components/send-button";
-@import "components/user-avatar";
+@import "components/ErrorContainer/ErrorContainer";
+@import "scss/components/chat/chat-aside";
+@import "scss/components/chat/chat-day-content";
+@import "scss/components/chat/chat-footer";
+@import "scss/components/chat/chat-header";
+@import "scss/components/chat/chat-item";
+@import "scss/components/button";
+@import "scss/components/form-group";
+@import "scss/components/form-loader";
+@import "scss/components/go-back-button";
+@import "scss/components/send-button";
+@import "scss/components/user-avatar";
 
 // pages
-@import "pages/authorization";
-@import "pages/registration";
-@import "pages/user-settings";
-@import "pages/edit-user";
-@import "pages/change-password";
-@import "pages/chat";
+@import "scss/pages/authorization";
+@import "scss/pages/registration";
+@import "scss/pages/user-settings";
+@import "scss/pages/edit-user";
+@import "scss/pages/change-password";
+@import "scss/pages/chat";
 
 // common styles
 body {
