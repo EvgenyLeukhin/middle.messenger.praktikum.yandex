@@ -1,5 +1,6 @@
 import * as ejs from 'ejs';
 
+// ejs variables <%- %> as props
 const string = `
   <main>
     <section class="error-page">
