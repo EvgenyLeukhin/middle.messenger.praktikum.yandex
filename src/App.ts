@@ -1,4 +1,4 @@
-import render from './spa/render';
+import render from './utils/spa/render';
 
 import {
   Authorization,

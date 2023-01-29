@@ -1,5 +1,5 @@
 import template from './template';
-import Component from '../../spa/Component';
+import Component from '../../utils/spa/Component';
 import ErrorContainer from '../../components/ErrorContainer';
 
 class Page500 extends Component {

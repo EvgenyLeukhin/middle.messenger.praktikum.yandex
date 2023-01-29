@@ -1,4 +1,4 @@
-import Component from '../../spa/Component';
+import Component from '../../utils/spa/Component';
 import template from './template';
 
 class TestPage extends Component {

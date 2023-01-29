@@ -1,5 +1,5 @@
 import template from './template';
-import Component from '../../spa/Component';
+import Component from '../../utils/spa/Component';
 
 type TErrorContainer =  {
   errorCode: string;
