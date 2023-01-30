@@ -35,8 +35,8 @@
     <li>Login+++</li>
     <li>Registration +++</li>
     <li>User settings +++</li>
+    <li>Change password +++</li>
     <li>Edit user settings ---</li>
-    <li>Change password ---</li>
     <li>Chat ---</li>
     <li>Form validation ---</li>
     <li>Add linters ---</li>
