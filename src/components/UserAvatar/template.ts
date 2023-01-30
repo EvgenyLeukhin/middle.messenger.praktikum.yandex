@@ -1,9 +1,9 @@
 import * as ejs from 'ejs';
 
 const string = `
-  <div class="user-avatar">
+  <div class="UserAvatar">
     <div
-      class="user-avatar__image <%= typeof editable != 'undefined' ? 'isEditable' : null %>"
+      class="UserAvatar__image <%= typeof isEditable != 'undefined' ? 'isEditable' : null %>"
       style="background-image:
         <%=
           typeof image != 'undefined'
@@ -13,7 +13,7 @@ const string = `
     >
       <div class="avatar-overlay">Поменять<br />аватар</div>
     </div>
-    <div class="user-avatar__name"><%= userName %></div>
+    <div class="UserAvatar__name"><%= userName %></div>
   </div>
 `;
 const template = ejs.compile(string);
