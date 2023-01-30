@@ -22,25 +22,39 @@
       font-size: 13px;
       padding: 9px 0;
       border-bottom: 1px solid $gray-dark;
-      &:last-child { border-bottom: none; }
+
+      &:last-child {
+        border-bottom: none;
+      }
     }
   }
 
-  &__middle { margin-bottom: 40px; }
+  &__middle {
+    margin-bottom: 40px;
+  }
 
   &__data-list {
     li {
       display: flex;
       justify-content: space-between;
 
-      b { font-weight: 500; }
-      span { color: $text-gray; }
+      b {
+        font-weight: 500;
+      }
+
+      span {
+        color: $text-gray;
+      }
     }
   }
 
-    &__bottom { color: inherit; }
+  &__bottom {
+    color: inherit;
+  }
 
-    &__controls-list {
-      a { font-size: 13px; }
+  &__controls-list {
+    a {
+      font-size: 13px;
     }
+  }
 }

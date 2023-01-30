@@ -1,7 +1,7 @@
 // custom
-@import "scss/custom/vars";
-@import "scss/custom/mixins";
-@import "scss/custom/reset";
+@import "scss/vars";
+@import "scss/mixins";
+@import "scss/reset";
 
 // components
 @import "components/ErrorContainer/ErrorContainer";
@@ -18,9 +18,9 @@
 @import "components/UserAvatar/UserAvatar";
 
 // routes
-@import "scss/routes/authorization";
-@import "scss/routes/registration";
-@import "scss/routes/user-settings";
+@import "routes/Authorization/Authorization";
+@import "routes/Registration/Registration";
+@import "routes/UserSettings/UserSettings";
 @import "scss/routes/edit-user";
 @import "scss/routes/change-password";
 @import "scss/routes/chat";
