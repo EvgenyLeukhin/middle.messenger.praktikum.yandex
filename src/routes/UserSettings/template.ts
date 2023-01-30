@@ -2,6 +2,8 @@ import * as ejs from 'ejs';
 
 const string = `
   <main>
+    <%- goBackButton %>
+
     <section class="user-settings">
       <div class="container">
 

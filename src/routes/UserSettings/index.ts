@@ -1,9 +1,11 @@
 import template from './template';
 import Component from '../../utils/spa/Component';
-import { UserAvatar } from '../../components';
+import { GoBackButton, UserAvatar } from '../../components';
 
-class Page500 extends Component {
+class UserSettings extends Component {
   constructor(props: Record<string, any> = {}) {
+    const goBackButton = new GoBackButton({ link: '/' });
+
     const userAvatar = new UserAvatar({
       userName: 'Иван',
       image: 'url(https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=881&q=80)',
@@ -17,6 +19,7 @@ class Page500 extends Component {
     const userPhone = '+7 (909) 967 30 30';
 
     super('main', {
+      goBackButton,
       userAvatar,
       userEmail,
       userLogin,
@@ -33,4 +36,4 @@ class Page500 extends Component {
   }
 }
 
-export default Page500;
+export default UserSettings;

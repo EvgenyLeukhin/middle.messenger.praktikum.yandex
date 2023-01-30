@@ -1,9 +1,11 @@
-import { Button, FormInput, FormLoader, UserAvatar } from '../../components';
+import { Button, FormInput, FormLoader, GoBackButton, UserAvatar } from '../../components';
 import Component from '../../utils/spa/Component';
 import template from './template';
 
 class ChangePassword extends Component {
   constructor(props: Record<string, any> = {}) {
+    const goBackButton = new GoBackButton({ link: '/' });
+
     const userAvatar = new UserAvatar({
       userName: 'Иван',
       image: 'url(https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=881&q=80)',
@@ -46,6 +48,7 @@ class ChangePassword extends Component {
     });
 
     super('main', {
+      goBackButton,
       userAvatar,
       formLoader,
       oldPassword,
