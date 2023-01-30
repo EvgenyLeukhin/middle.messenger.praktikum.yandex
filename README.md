@@ -25,6 +25,8 @@
 - Тестовый стенд: [Netlify](https://www.netlify.com/)
 - Шрифты: [Google Fonts](https://fonts.google.com/)
 - Изображения: [Unsplash](https://unsplash.com/)
+- Типизация:
+- Линтеры: 
 
 <div class="container">
   <ul>
