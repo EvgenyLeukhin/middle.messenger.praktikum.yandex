@@ -1,0 +1,53 @@
+.user-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+
+  &__image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: $gray-normal;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+
+    &.editable {
+      position: relative;
+      pointer-events: auto;
+      cursor: pointer;
+
+      &:hover {
+        .avatar-overlay {
+          display: flex;
+        }
+      }
+    }
+
+    .avatar-overlay {
+      display: none;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      border-radius: 50%;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 14px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $overlay-black;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
