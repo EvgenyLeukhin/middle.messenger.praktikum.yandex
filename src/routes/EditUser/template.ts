@@ -1,9 +1,28 @@
-import ejs from 'ejs';
+import * as ejs from 'ejs';
 
 const string = `
-  <section class="edit-user">
-    <h1>Edit User</h1>
-  </section>
+  <main>
+    <%- goBackButton %>
+
+    <section class="edit-user">
+      <div class="container">
+        <%- userAvatar %>
+
+        <form class="edit-user__form" id="edit-user" action="" method="post">
+          <%- formLoader %>
+
+          <%- emailInput %>
+          <%- loginInput %>
+          <%- firstNameInput %>
+          <%- secondNameInput %>
+          <%- displayNameInput %>
+          <%- phoneInput %>
+
+          <%- formSubmitButton %>
+        </form>
+      </div>
+    </section>
+  </main>
 `;
 
 const template = ejs.compile(string);
