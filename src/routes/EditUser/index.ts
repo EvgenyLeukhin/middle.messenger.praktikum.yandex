@@ -1,6 +1,6 @@
 import template from './template';
 import Component from '../../utils/spa/Component';
-import { Button, FormInput, FormLoader, GoBackButton, UserAvatar } from '../../components';
+import { Button, ChangeAvatarModal, FormInput, FormLoader, GoBackButton, UserAvatar } from '../../components';
 
 class EditUser extends Component {
   constructor(props: Record<string, any> = {}) {
@@ -12,7 +12,7 @@ class EditUser extends Component {
       image: 'url(https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=881&q=80)',
     });
 
-    const formLoader = new FormLoader(props);
+    const formLoader = new FormLoader({});
 
     const emailInput = new FormInput({
       label: 'Почта',
@@ -72,6 +72,8 @@ class EditUser extends Component {
       },
     });;
 
+    const changeAvatarModal = new ChangeAvatarModal({});
+
     super('div', {
       goBackButton,
       userAvatar,
@@ -83,6 +85,7 @@ class EditUser extends Component {
       displayNameInput,
       phoneInput,
       formSubmitButton,
+      changeAvatarModal,
     ...props });
   }
 

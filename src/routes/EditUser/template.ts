@@ -4,11 +4,11 @@ const string = `
   <main>
     <%- goBackButton %>
 
-    <section class="edit-user">
+    <section class="EditUser">
       <div class="container">
         <%- userAvatar %>
 
-        <form class="edit-user__form" id="edit-user" action="" method="post">
+        <form class="EditUser__form" id="edit-user" action="" method="post">
           <%- formLoader %>
 
           <%- emailInput %>
@@ -22,6 +22,8 @@ const string = `
         </form>
       </div>
     </section>
+
+    <%- changeAvatarModal %>
   </main>
 `;
 

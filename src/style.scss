@@ -16,12 +16,13 @@
 @import "components/GoBackButton/GoBackButton";
 @import "scss/components/send-button";
 @import "components/UserAvatar/UserAvatar";
+@import "components/ChangeAvatarModal/ChangeAvatarModal";
 
 // routes
 @import "routes/Authorization/Authorization";
 @import "routes/Registration/Registration";
 @import "routes/UserSettings/UserSettings";
-@import "scss/routes/edit-user";
+@import "routes/EditUser/EditUser";
 @import "routes/ChangePassword/ChangePassword";
 @import "scss/routes/chat";
 

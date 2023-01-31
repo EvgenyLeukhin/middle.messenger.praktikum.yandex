@@ -1,7 +1,7 @@
 import template from './template';
 import Component from '../../utils/spa/Component';
 
-class FormLoader extends Component {
+class ChangeAvatarModal extends Component {
   constructor(props) {
     super('div', props);
   }
@@ -11,4 +11,4 @@ class FormLoader extends Component {
   }
 }
 
-export default FormLoader;
+export default ChangeAvatarModal;

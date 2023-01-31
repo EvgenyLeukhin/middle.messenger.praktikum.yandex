@@ -4,6 +4,7 @@ import FormInput from './FormInput';
 import GoBackButton from './GoBackButton';
 import FormLoader from './FormLoader';
 import UserAvatar from './UserAvatar';
+import ChangeAvatarModal from './ChangeAvatarModal';
 
 export {
   Button,
@@ -12,4 +13,5 @@ export {
   GoBackButton,
   FormLoader,
   UserAvatar,
+  ChangeAvatarModal,
 }
