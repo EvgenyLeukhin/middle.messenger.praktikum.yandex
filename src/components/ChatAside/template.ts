@@ -19,3 +19,9 @@ const string = `
 const template = ejs.compile(string);
 
 export default template;
+
+// chat-list
+// <ul class="chat-aside__list">
+//   <% for(let i = 0; i < 20; i++) {%>
+//     <%- include('./chat-item') -%>
+// <% } %>
