@@ -4,7 +4,7 @@ import template from './template';
 
 class ChangePassword extends Component {
   constructor(props: Record<string, any> = {}) {
-    const goBackButton = new GoBackButton({ link: '/' });
+    const goBackButton = new GoBackButton({ link: '/user-settings' });
 
     const userAvatar = new UserAvatar({
       userName: 'Иван',

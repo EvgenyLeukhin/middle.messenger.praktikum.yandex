@@ -4,7 +4,7 @@ import { Button, ChangeAvatarModal, FormInput, FormLoader, GoBackButton, UserAva
 
 class EditUser extends Component {
   constructor(props: Record<string, any> = {}) {
-    const goBackButton = new GoBackButton({ link: '/' });
+    const goBackButton = new GoBackButton({ link: '/user-settings' });
 
     const userAvatar = new UserAvatar({
       isEditable: true,
