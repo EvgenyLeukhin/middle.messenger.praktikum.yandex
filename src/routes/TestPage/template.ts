@@ -1,4 +1,4 @@
-import ejs from 'ejs';
+import * as ejs from 'ejs';
 
 const string = `
   <section class="test-page">

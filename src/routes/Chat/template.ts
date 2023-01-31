@@ -1,9 +1,19 @@
 import * as ejs from 'ejs';
 
 const string = `
-  <section class="chat">
-    <h1>Chat</h1>
-  </section>
+  <div class="chat">
+    <%- chatAside %>
+
+    <main>
+      <%- chatHeader %>
+
+      <div class="chat-content">
+        <%- chatDayContent %>
+      </div>
+
+      <%- chatFooter %>
+    </main>
+  </div>
 `;
 
 const template = ejs.compile(string);
