@@ -4,7 +4,7 @@ const string = `
   <aside class="chat-aside">
     <div class="chat-aside__top">
       <!-- Профиль -->
-      <a href="user-settings.ejs">Профиль</a>
+      <a href="/user-settings">Профиль</a>
 
       <!-- Поиск -->
       <div class="chat-search-wrapper">
