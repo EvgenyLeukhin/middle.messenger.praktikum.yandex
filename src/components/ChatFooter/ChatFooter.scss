@@ -10,7 +10,7 @@
   background-color: white;
 
   // file upload
-  &>div:first-child {
+  & > div:first-child {
     label {
       flex-grow: 0;
       flex-shrink: 0;
@@ -50,7 +50,16 @@
   }
 
   // button
-  &>a:last-child {
-    color: inherit;
+  .send-button {
+    display: inline-flex;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: $primary;
+    background-position: 50% 55%;
+    background-repeat: no-repeat;
+    background-image: url(../public/images/icons/arrow-left.svg);
+    background-size: 60% auto;
+    transform: rotate(180deg);
   }
 }
