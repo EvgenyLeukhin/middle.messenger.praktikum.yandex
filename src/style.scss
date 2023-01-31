@@ -5,11 +5,11 @@
 
 // components
 @import "components/ErrorContainer/ErrorContainer";
-@import "scss/components/chat/chat-aside";
-@import "scss/components/chat/chat-day-content";
-@import "scss/components/chat/chat-footer";
-@import "scss/components/chat/chat-header";
-@import "scss/components/chat/chat-item";
+@import "components/ChatAside/ChatAside";
+@import "components/ChatDayContent/ChatDayContent";
+@import "components/ChatFooter/ChatFooter";
+@import "components/ChatHeader/ChatHeader";
+@import "components/ChatItem/ChatItem";
 @import "components/Button/Button";
 @import "components/FormInput/FormInput.scss";
 @import "components/FormLoader/FormLoader";
@@ -24,7 +24,7 @@
 @import "routes/UserSettings/UserSettings";
 @import "routes/EditUser/EditUser";
 @import "routes/ChangePassword/ChangePassword";
-@import "scss/routes/chat";
+@import "routes/Chat/Chat";
 
 // common styles
 body {

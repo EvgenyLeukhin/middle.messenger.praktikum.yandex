@@ -14,6 +14,7 @@
       flex-grow: 1;
       max-height: calc(100vh - ($header-height + $footer-height));
       overflow-y: auto;
+
       // scrollbar track width
       &::-webkit-scrollbar {
         width: 4px;

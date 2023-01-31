@@ -1,6 +1,7 @@
 .chat-day-content {
   padding-top: 30px;
   padding-right: 15px;
+
   .date {
     font-weight: 500;
     font-size: 12px;
@@ -17,7 +18,8 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    & > li {
+
+    &>li {
       position: relative;
       font-weight: 500;
       font-size: 12px;
@@ -58,6 +60,7 @@
 
       &.internal {
         align-self: flex-end;
+
         p {
           border-radius: 10px 10px 0 10px;
           background-color: $selected;
@@ -75,7 +78,9 @@
 
       &:last-child {
         &.sended {
-          p { padding-right: 50px; }
+          p {
+            padding-right: 50px;
+          }
 
           .time {
             padding-left: 11px;
@@ -86,7 +91,9 @@
         }
 
         &.read {
-          p { padding-right: 50px; }
+          p {
+            padding-right: 50px;
+          }
 
           .time {
             color: $primary;

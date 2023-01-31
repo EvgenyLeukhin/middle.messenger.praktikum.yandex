@@ -5,7 +5,10 @@
   transition-property: background-color;
   transition-duration: $default-duration;
   border-bottom: 1px solid #EAEAEA;
-  &:hover { background-color: $selected; }
+
+  &:hover {
+    background-color: $selected;
+  }
 
   // left
   .left {
