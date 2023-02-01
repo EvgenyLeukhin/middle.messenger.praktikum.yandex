@@ -9,22 +9,17 @@
     "dev": "yarn start",
     "build": "parcel build src/index.html",
     "serve": "node src/utils/server.js",
-    "lint": "eslint src/ ",
-    "lint:fix": "eslint src/ --fix"
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
   },
   "keywords": [
     "js",
     "praktikum"
   ],
-  "dependencies": {
-    "@types/ejs": "^3.1.1",
-    "ejs": "^3.1.8",
-    "nanoid": "^4.0.0"
-  },
   "devDependencies": {
-    "@parcel/packager-raw-url": "2.8.2",
+    "@parcel/packager-raw-url": "^2.8.3",
     "@parcel/transformer-sass": "^2.8.2",
-    "@parcel/transformer-webmanifest": "2.8.2",
+    "@parcel/transformer-webmanifest": "2.8.3",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "@typescript-eslint/parser": "^5.50.0",
     "eslint": "^8.33.0",
@@ -33,7 +28,12 @@
     "parcel": "^2.8.2",
     "parcel-transformer-ejs": "^1.0.1",
     "path-browserify": "^1.0.0",
-    "process": "^0.11.10"
+    "process": "^0.11.10",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@types/ejs": "^3.1.1",
+    "nanoid": "^4.0.0"
   },
   "repository": {
     "type": "git",
