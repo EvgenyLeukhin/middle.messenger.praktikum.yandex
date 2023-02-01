@@ -1,6 +1,6 @@
-console.log('edit-user page');
-
 import { handleForm } from '../utils/form';
+
+console.log('edit-user page');
 
 handleForm('edit-user');
 

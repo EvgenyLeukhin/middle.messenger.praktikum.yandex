@@ -27,7 +27,7 @@ class UserSettings extends Component {
       userSecondName,
       userNickname,
       userPhone,
-      ...props
+      ...props,
     });
   }
 

@@ -2,7 +2,7 @@ import template from './template';
 import Component from '../../utils/spa/Component';
 import { StatusList } from '../../types/common';
 
-type TButton =  {
+type TButton = {
   buttonStatus?: StatusList;
   buttonText: string;
   buttonType?: string;

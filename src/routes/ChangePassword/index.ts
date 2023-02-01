@@ -1,4 +1,6 @@
-import { Button, FormInput, FormLoader, GoBackButton, UserAvatar } from '../../components';
+import {
+  Button, FormInput, FormLoader, GoBackButton, UserAvatar,
+} from '../../components';
 import Component from '../../utils/spa/Component';
 import template from './template';
 
@@ -42,7 +44,7 @@ class ChangePassword extends Component {
       events: {
         click: (e) => {
           e.preventDefault();
-          alert('Change password form submit')
+          alert('Change password form submit');
         },
       },
     });
@@ -55,7 +57,7 @@ class ChangePassword extends Component {
       newPassword,
       newPasswordRepeat,
       submitButton,
-      ...props
+      ...props,
     });
   }
 

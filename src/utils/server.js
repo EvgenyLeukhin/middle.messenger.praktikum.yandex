@@ -1,6 +1,7 @@
 // Express config
 const path = require('path');
 const express = require('express');
+
 const server = express();
 const PORT = 8000;
 const PATH = path.join(__dirname, '../../dist');
@@ -12,5 +13,4 @@ server.listen(PORT, () => console.log(`
     ---------------------------------------
     [Folder]     Serving files from:' ${PATH}
     [URL]        http://localhost:${PORT}
-  `)
-);
+  `));

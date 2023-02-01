@@ -1,7 +1,7 @@
 import template from './template';
 import Component from '../../utils/spa/Component';
 
-type TFormInput =  {
+type TFormInput = {
   id?: string;
   type: string;
   name: string;

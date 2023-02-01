@@ -1,9 +1,8 @@
 import template from './template';
 import Component from '../../utils/spa/Component';
 
-
 // ejs variables <%- %> as props object
-type TErrorContainer =  {
+type TErrorContainer = {
   errorCode: string;
   errorMessage: string;
   errorBackLink: string;
@@ -13,7 +12,6 @@ type TErrorContainer =  {
 class ErrorContainer extends Component {
   // transfer props(ejs vars) to Components constructor
   constructor(props: TErrorContainer) {
-
     // ???
     super('div', props);
   }

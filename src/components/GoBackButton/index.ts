@@ -1,7 +1,7 @@
 import template from './template';
 import Component from '../../utils/spa/Component';
 
-type TGoBackButton =  {
+type TGoBackButton = {
   link?: string;
 }
 

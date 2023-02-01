@@ -24,4 +24,4 @@ export {
   GoBackButton,
   FormLoader,
   UserAvatar,
-}
+};

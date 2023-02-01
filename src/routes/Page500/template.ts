@@ -1,6 +1,6 @@
 import * as ejs from 'ejs';
 
-const string = `<%- errorSection %>`;
+const string = '<%- errorSection %>';
 
 const template = ejs.compile(string);
 

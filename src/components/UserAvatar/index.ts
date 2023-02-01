@@ -1,7 +1,7 @@
 import template from './template';
 import Component from '../../utils/spa/Component';
 
-type TUSerAvatar =  {
+type TUSerAvatar = {
   isEditable?: boolean;
   image: string;
   userName: string;

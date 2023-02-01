@@ -1,5 +1,3 @@
-'use strict';
-
 export function handleForm(formId) {
   // find form
   const formTag = document.getElementById(formId);
@@ -17,50 +15,48 @@ export function handleForm(formId) {
 
   // add validation to all paragraphs
   function addValidationText(text) {
-    validation.forEach(validationTag => {
+    validation.forEach((validationTag) => {
       validationTag.textContent = text;
     });
   }
 
   // add input error
   function addInputError() {
-    formInputs.forEach(input => {
+    formInputs.forEach((input) => {
       input.classList.add('hasError');
     });
   }
 
   // remove input error
   function removeInputError() {
-    formInputs.forEach(input => {
+    formInputs.forEach((input) => {
       input.classList.remove('hasError');
     });
   }
 
   // handle inputs
-  formInputs.forEach(input => {
+  formInputs.forEach((input) => {
     // check for already hasValue
     if (input.value) input.classList.add('hasValue');
 
     // change listener for inputs (add class hasValue)
     input.addEventListener('change', (e) => {
-
       // remove hasError class
       e.target.classList.remove('hasError');
 
       // remove validation error text
       const formGroups = formTag.querySelectorAll('.form-group');
-      formGroups.forEach(formGroup => {
-        if (formGroup.contains(e.target))
-          formGroup.getElementsByTagName('p')[0].textContent = '';
-      })
+      formGroups.forEach((formGroup) => {
+        if (formGroup.contains(e.target)) formGroup.getElementsByTagName('p')[0].textContent = '';
+      });
 
       if (input.value) {
         input.classList.add('hasValue');
       } else {
         input.classList.remove('hasValue');
       }
-    })
-  })
+    });
+  });
 
   // submit listener
   formTag.addEventListener('submit', (e) => {
@@ -76,8 +72,7 @@ export function handleForm(formId) {
       formTag.classList.remove('sending');
 
       // show values in console
-      formInputs.forEach(input => console.log(`${input.name}: ${input.value}`));
-
+      formInputs.forEach((input) => console.log(`${input.name}: ${input.value}`));
 
       // add validation error
       addInputError();

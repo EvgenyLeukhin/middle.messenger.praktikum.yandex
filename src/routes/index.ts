@@ -18,4 +18,4 @@ export {
   Registration,
   TestPage,
   UserSettings,
-}
+};

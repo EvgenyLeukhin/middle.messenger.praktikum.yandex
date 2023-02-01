@@ -2,7 +2,6 @@ import { nanoid } from 'nanoid';
 import EventBus from './EventBus';
 
 abstract class Component {
-
   // EVENTS
   private EVENTS: Record<string, string> = {
     INIT: 'init',
@@ -30,7 +29,7 @@ abstract class Component {
   protected id: string;
 
   // constructor
-  protected constructor(tagName: string = 'div', propsAndChildren: Record<string, any> = {}) {
+  protected constructor(tagName = 'div', propsAndChildren: Record<string, any> = {}) {
     this.tagName = tagName;
     this.id = nanoid(); // generate custom id
 
@@ -146,15 +145,13 @@ abstract class Component {
 
   // getElement
   public getElement(): HTMLElement {
-    return <HTMLElement>this.element;
+    return <HTMLElement> this.element;
   }
 
   // makePropsProxy
   private makePropsProxy(props: Record<string, any>): Record<string, any> {
     const proxySetting = {
-      get: (target: Record<string, any>, prop: string): unknown => {
-        return target[prop];
-      },
+      get: (target: Record<string, any>, prop: string): unknown => target[prop],
 
       set: (
         target: Record<string, any>,

@@ -1,6 +1,8 @@
 import template from './template';
 import Component from '../../utils/spa/Component';
-import { Button, ChangeAvatarModal, FormInput, FormLoader, GoBackButton, UserAvatar } from '../../components';
+import {
+  Button, ChangeAvatarModal, FormInput, FormLoader, GoBackButton, UserAvatar,
+} from '../../components';
 
 class EditUser extends Component {
   constructor(props: Record<string, any> = {}) {
@@ -67,10 +69,10 @@ class EditUser extends Component {
       events: {
         click: (e) => {
           e.preventDefault();
-          alert('Edit user form submit')
+          alert('Edit user form submit');
         },
       },
-    });;
+    });
 
     const changeAvatarModal = new ChangeAvatarModal({});
 
@@ -86,7 +88,8 @@ class EditUser extends Component {
       phoneInput,
       formSubmitButton,
       changeAvatarModal,
-    ...props });
+      ...props,
+    });
   }
 
   render() {

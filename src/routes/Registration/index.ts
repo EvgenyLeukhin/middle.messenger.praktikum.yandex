@@ -69,7 +69,7 @@ class Registration extends Component {
       events: {
         click: (e) => {
           e.preventDefault();
-          alert('Register form submit')
+          alert('Register form submit');
         },
       },
     });

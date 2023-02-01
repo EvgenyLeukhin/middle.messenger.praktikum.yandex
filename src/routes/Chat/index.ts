@@ -1,4 +1,6 @@
-import { ChatAside, ChatHeader, ChatFooter, ChatDayContent } from '../../components';
+import {
+  ChatAside, ChatHeader, ChatFooter, ChatDayContent,
+} from '../../components';
 import Component from '../../utils/spa/Component';
 import template from './template';
 
@@ -14,9 +16,10 @@ class Chat extends Component {
       chatHeader,
       chatDayContent,
       chatFooter,
-      ...props
+      ...props,
     });
   }
+
   render() {
     return this.setTemplate(template, this.props);
   }
